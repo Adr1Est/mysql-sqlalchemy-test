@@ -14,6 +14,11 @@ def get_users():
     users = get_all_users()
     return jsonify([u.serialize() for u in users]), 200
 
+# Esto [u.serialize() for u in users] es igual a esto otro:
+# serialized_users = []
+# for u in users:
+#     serialized_users.append(u.serialize())
+
 @app.route('/users', methods=['POST'])
 def create_user():
     data = request.json
