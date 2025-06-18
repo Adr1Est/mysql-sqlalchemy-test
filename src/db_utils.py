@@ -5,6 +5,7 @@ def get_all_users():
     return User.query.all()
 
 def get_artist_by_id(artist_id: int) -> Artist | None: 
+# -> Artist | None: Esto significa que la función devuelve un objeto del tipo Artist o None
     return Artist.query.get(artist_id)
 
 def add_new_user(username, firstname, lastname, email, password, is_active=True):
