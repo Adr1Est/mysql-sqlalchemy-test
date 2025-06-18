@@ -8,6 +8,7 @@ def get_artist_by_id(artist_id: int) -> Artist | None:
     return Artist.query.get(artist_id)
 
 def add_new_user(username, firstname, lastname, email, password, is_active=True):
+    # Modificar en función de la tabla user en cada caso
     new_user = User(
         username=username,
         firstname=firstname,

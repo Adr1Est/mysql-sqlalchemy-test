@@ -23,6 +23,7 @@ def get_users():
 def create_user():
     data = request.json
     user = add_new_user(
+        # Modificar en función de la tabla user en cada caso
         username=data['username'],
         firstname=data['firstname'],
         lastname=data['lastname'],
