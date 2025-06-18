@@ -1,6 +1,14 @@
 # MySQL conexión con Flask y SQLAlchemy
 Conexión de una base de datos de MySQL con SQLAlchemy y endpoints en Flask.
 Los modelos y endpoints deben ser adaptados a la base de datos.
+
+## Iniciar
+```bash
+  pipenv install
+
+  pipenv run start
+```
+
 ## src/:
 - app.py: Servidor Flask.
 - models.py: Modelos SQLAlchemy
